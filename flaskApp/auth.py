@@ -82,6 +82,6 @@ def login_with_credentials():
             return make_response({"message":"successful login", "token":jwt_token.decode('utf8')},200)
     except Exception as e:
         return str(e)
-    finally:
-        c.close()
-        conn.close()
+    # finally:
+    #     c.close()
+    #     conn.close()

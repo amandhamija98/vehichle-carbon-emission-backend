@@ -104,3 +104,9 @@ def save_andro_sensor_data():
         return make_response({"message": "succesfully inserted androsensor data"}, 200)
     except Exception as e:
         return make_response({"message": "encountered exception","error": [str(x) for x in e.args]},500)
+
+
+@bp.route('/saveVehicleData', methods=['POST'])
+def save_andro_sensor_data():
+    return make_response({"message":"Data stored"},200)
+
