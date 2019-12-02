@@ -107,6 +107,6 @@ def save_andro_sensor_data():
 
 
 @bp.route('/saveVehicleData', methods=['POST'])
-def save_andro_sensor_data():
+def save_vehicle_data():
     return make_response({"message":"Data stored"},200)
 
